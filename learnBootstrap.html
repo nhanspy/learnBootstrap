@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="mb-sm-5">
+
+    <var class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom d-flex justify-content-between" style="padding: 5px">
+        <div class="navbar" style="padding: 0%">
+            <a href="#" class="navbar-brand">Nhan</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#link" class="nav-link active" data-toggle="tab">#Link1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#l2" class="nav-link" data-toggle="tab">#Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#l2" class="nav-link" data-toggle="tab">#Link3</a>
+                </li>
+                <li class="nav-item dropup">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link4</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">item1</a>
+                        <a href="#" class="dropdown-item">item2</a>
+                    </div> 
+                </li>
+                </ul>
+        </div>
+        
+        <form class="form-inline mr-sm-0" action="/action_page.php">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text"><img src="magnifying-glass.png" style="height: 1.3rem" alt="search">
+                    </span>
+                </div>
+            </div>
+        </form>
+    </var>
+
+    <div class="tab-content">
+        <div class="container tab-pane active" id="link">
+
+            <div class="carousel slide" data-ride="carousel" id="demoslide">
+                <ul class="carousel-indicators">
+                    <li class="active" data-target="#demoslide" data-slide-to="0"></li>
+                    <li data-target="#demoslide" data-slide-to="1"></li>
+                    <li data-target="#demoslide" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="doge.jpg" alt="doge">
+                        <div class="carousel-caption">
+                            <h3>Tran Viet Nhan</h3>
+                            <p>Tran Viet Nhan</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image1.jpg" alt="img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image2.jpg" alt="img2">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#demoslide" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#demoslide" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <h1 class="text-left">Hello</h1>
+            <div class="row">
+                <div class="col-md text-warning">Haha</div>
+                <a href="#" class="col-md text-info text-decoration-none">Nhan</a>
+                <div class="col-md">Haha</div>
+                <div class="col-md">Haha</div>
+            </div>
+
+            <div class="w-100 blockquote" >&nbsp;</div>
+
+            <h2 class="display-4">Tables</h2>
+
+            <div class="w-100 blockquote" >&nbsp;&nbsp;&nbsp;</div>
+            <div>
+                <table class="table table-bordered table-hover table-striped table-success table-sm ">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>sex</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Nhan</td>
+                        <td>19</td>
+                        <td>male</td>
+                    </tr>
+                    <tr>
+                        <td>Nhan</td>
+                        <td>19</td>
+                        <td>male</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <img src="doge.jpg" alt="Cho" style="width: 75%" class="mx-auto d-block">
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button class="close" data-dismiss="alert" type="button">&times;</button>
+                <strong>Success!</strong> Thành công !
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-dark">button1</button>
+                <button class="btn btn-dark">button1</button>
+                <div class="btn-group">
+                        <a href="facebook.com" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">button1</a>
+                        <div class="dropdown-menu">
+                            <a href="facebook.com" class="dropdown-item">nhan</a>
+                            <a href="#" class="dropdown-item">nhan</a>
+                            <a href="#" class="dropdown-item">nhan</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" ><span class="spinner-border spinner-grow-sm"></span> Nhan</button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item">haha</button>
+                    <a href="https://www.facebook.com/" target="_blank" class="dropdown-item">nhan</a>
+                    <a href="https://www.facebook.com/" class="dropdown-item">nhan</a>
+                    <a href="https://www.facebook.com/" class="dropdown-item">nhan</a>
+                </div>
+            </div>
+
+            <div class="progress" style="height: 30px">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="height: 30px ">60%</div>
+            </div>
+            <div class="spinner-border "></div>
+
+            <ul class="pagination pagination-sm justify-content-end">
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">next</a></li>
+            </ul>
+            <ul class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#">Tran</a></li>
+                <li class="breadcrumb-item"><a href="#">Viet</a></li>
+                <li class="breadcrumb-item active"><a href="#">Nhan</a></li>
+            </ul>
+
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">Tran Viet Nhan
+                        <span class="badge badge-primary badge-pill">10</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Tran Viet Nhan</a>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Tran Viet Nhan
+                    <span class="badge badge-primary badge-pill">10</span>
+                </li>
+            </ul>
+
+            <div class="card-deck"  >
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-body">
+                        <p class="card-text">Tran Viet Nhan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropright btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    If yoy want see God!
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#" class="dropdown-item">Tran Viet Nhan</a>
+                    <a href="#" class="dropdown-item">Tran Viet Nhan</a>
+                    <div class="btn-group dropright">
+                        <button class="dropdown-item dropdown-toggle" data-toggle="dropdown">Tran Viet Nhan</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Tran Viet Nhan</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card" id="parent">
+                <div class="card-header">
+                    <a href="#first" class="card-link" data-toggle="collapse">Get link #1</a>
+                </div>
+                <div class="collapse show" id="first" data-parent="#parent">
+                    <div class="card-body">
+                        Recently, there are several changes in my career that allow me some time to
+                        look back on the previous years and prepare myself for the next move.
+                        Last year, I got a new exciting job which my task is to guide the inexperienced apprentices into 
+                        real-life working environment. Each time after the three-month apprenticeship ended, I always figured out 
+                        something interesting about the time before graduation. On the occasion of this time break-up, I’m typing 
+                        this to my students, the guys who often call me “Dad” in fun.
+                    </div>
+                </div>
+                
+                <div class="card-header">
+                    <a href="#second" class="card-link" data-toggle="collapse">Get link #2</a>
+                </div>
+                <div class="collapse" id="second" data-parent="#parent">
+                    <div class="card-body">
+                        Recently, there are several changes in my career that allow me some time to
+                        look back on the previous years and prepare myself for the next move.
+                        Last year, I got a new exciting job which my task is to guide the inexperienced apprentices into 
+                        real-life working environment. Each time after the three-month apprenticeship ended, I always figured out 
+                        something interesting about the time before graduation. On the occasion of this time break-up, I’m typing 
+                        this to my students, the guys who often call me “Dad” in fun.
+                    </div>
+                </div>
+
+                <div class="card-header">
+                    <a href="#their" class="card-link" data-toggle="collapse">Get link #3</a>
+                </div>
+                <div class="collapse" id="their" data-parent="#parent">
+                    <div class="card-body">
+                        Recently, there are several changes in my career that allow me some time to
+                        look back on the previous years and prepare myself for the next move.
+                        Last year, I got a new exciting job which my task is to guide the inexperienced apprentices into 
+                        real-life working environment. Each time after the three-month apprenticeship ended, I always figured out 
+                        something interesting about the time before graduation. On the occasion of this time break-up, I’m typing 
+                        this to my students, the guys who often call me “Dad” in fun.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 500px">
+                <div class="card-header">
+                    <h5 class="card-title">Tran Viet Nhan</h5>
+                    <p class="card-text">hahahahahhaha</p>
+                    <a href="#" class="btn btn-outline-primary" role="button">Submit</a>
+                </div>
+                <img src="doge.jpg" alt="no img" class="card-img-bottom">
+            </div>
+
+            <button class="btn btn-primary " data-toggle="collapse" data-target="#demo"=>Click</button>
+
+            <div id="demo" class="collapse" data-parent="#parent">
+                <div class="">
+                    <div class="card" style="width: 300px">
+                        <img src="doge.jpg".jpg" alt="girl"class="card-img-top">
+                        <div class="card-footer">
+                            <h4 class="card-title">Trần Viết Nhân</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                            <a class="btn btn-primary btn-sm stretched-link" data-toggle="collapse" href="#demo2">Bam vao day</a>
+                        </div>
+                    </div>
+                    <div id="demo2" class="collapse">
+                        <div class="card-body">
+                            <p class="card-text">Dep trai vls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Navlist -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-toggle="tab">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu1" class="nav-link" data-toggle="tab">Menu1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu2" class="nav-link" data-toggle="tab">Menu2</a>
+                </li>
+            </ul>
+
+            <!-- tab-content -->
+            <div class="tab-content">
+                <div class="container tab-pane active" id="home">
+                    <h3>Home</h3>
+                    <p>Tran Viet Nhan</p>
+                </div>
+                <div class="container tab-pane fade" id="menu1">
+                    <h3>Menu1</h3>
+                    <p>Tran Viet Nhan</p>
+                </div>
+                <div class="container tab-pane fade" id="menu2">
+                    <h3>Menu2</h3>
+                    <p>Tran Viet Nhan</p>
+                </div>
+            </div>
+
+            <h2>Stacked Form #Demo</h2>
+            <form action="/action_page.php" class="">
+                <div class="form-group" >
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    <div class="valid-feedback">agree</div>
+                    <div class="invalid-feedback">disagree</div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+                    <div class="valid-feedback">agree</div>
+                    <div class="invalid-feedback">disagree</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <input type="checkbox" name="remember" class="form-check-input" required >
+                        Remember
+                        <div class="valid-feedback">agree</div>
+                        <div class="invalid-feedback">disagree</div>
+                    </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+
+            <h2>Form inline #Demo</h2>
+            <form action="" class="form-inline">
+                <label for="email" class="mb-2 mr-sm-2">Email</label>
+                <input type="email" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email">
+                <label for="password" class="mb-2 mr-sm-2">Password</label>
+                <input type="password" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="Enter Password">
+                <label for="checkbox" class="mb-2 mr-sm-2 form-check">
+                    <input type="checkbox" name="remember" class="mr-sm-2 form-check-input">
+                    Remember
+                </label>
+                <button class="btn btn-primary mb-2 mr-sm-2">Submit</button>
+            </form>
+            <form >
+                <div class="custom-checkbox custom-control custom-control-inline">
+                    <input type="checkbox" name="checkboxx" id="checkboxdemo" class="custom-control-input">
+                    <label for="checkboxdemo" class="custom-control-label">Checkbox</label>
+                </div>
+                <div class="custom-switch custom-control custom-control-inline">
+                    <input type="checkbox" name="switch" id="switchdemo" class="custom-control-input">
+                    <label for="switchdemo" class="custom-control-label">switch</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="radio" id="radiodemo" class="custom-control-input">
+                    <label for="radiodemo" class="custom-control-label">Radio</label>
+                </div>
+            </form>
+            <form>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="chosefile">
+                    <label for="chosefile" class="custom-file-label">Chosefile</label>
+                </div> 
+                <select name="selectdemo" id="selectdemo" class="custom-select custom-select-sm">
+                    <option value="1"></option>
+                    <option value="2">Viet</option>
+                    <option value="3" selected>Nhan</option>
+                </select>
+                <input type="range" class="custom-range">
+            </form>
+
+        </div>
+
+    <div class="container tab-pane fade" id="l2">
+            <h2>Modal Example</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header "">
+                    <h4 class="modal-title">Modal Header</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+    </div>
+
+    </div>
+
+    
+    <script src="js/jquery-3.3.1.slim.min.jSwitchs"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
