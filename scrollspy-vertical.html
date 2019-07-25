@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollspy vertical</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .col-8 div{
+            height: 700px;
+        }
+    </style>
+</head>
+<body class="container-fluid" data-spy="scroll" style="float:">
+    <div class="row">
+        <div class="col-sm-3 col-4">
+            <nav style="position: fixed">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link active">section1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section2" class="nav-link">section2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section3" class="nav-link">section3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-sm-9 col-8">
+            <div class="bg-success" id="section1">
+                <h3>Tran Viet Nhan</h3>
+                <p>hahahahahahahah</p>
+            </div>
+            <div class="bg-info" id="section2">
+                <h3>Tran Viet Nhan</h3>
+                <p>hahahahahahahah</p>
+            </div>
+            <div class="bg-danger" id="section3">
+                <h3>Tran Viet Nhan</h3>
+                <p>hahahahahahahah</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
